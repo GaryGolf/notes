@@ -1,0 +1,8 @@
+body {
+	background-color: silver;
+}
+.note {
+	color: red;
+	background-color: navy;
+	display: block;
+}
