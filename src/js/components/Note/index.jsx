@@ -27,8 +27,10 @@ export default class  Note extends React.Component {
         return (
 
             <div className="note">
-                <textarea className="note" onInput={this.changeTextHandler.bind(this)}
-                    value = {this.state.value} />
+                <div className="wrapper">
+                    <textarea className="note" onInput={this.changeTextHandler.bind(this)}
+                        value = {this.state.value} />
+                </div>
                 <span className="tick">
                     <img src={tick} onClick={this.clickHandler.bind(this)} />
                 </span>
@@ -46,7 +48,7 @@ export default class  Note extends React.Component {
                 onDoubleClick={this.dblClickHandler.bind(this)}
                 onContextMenu={this.dblClickHandler.bind(this)}
             >
-                   {this.state.value}
+            <div className="wrapper"> {this.state.value} </div>
                 <span className="trash">
                     <span>
                          <img src={trash} onClick={this.clickHandler.bind(this)} />
