@@ -7,19 +7,39 @@ div.note {
 	position: relative;
 	#color: navy;
 	background-color: yellow;
-	box-shadow: 10px 10px 20px -5px black;
+	box-shadow: 5px 5px 10px -5px black;
 	width: 150px;
 	height: 150px;
+	user-select: none;
 }
-.btns {
-	display: inline-block;
+.trash {
+	display: block;
 	position: absolute;
-	bottom: 4px;
-	right: 4px;
+	width: 30px;
+	height: 30px;
+	bottom: 0px;
+	right: 0px;
 }
-.btns span {
+.trash span {
+	position: absolute;
+	width: 100%;
 	visibility: hidden;
 }
-.btns:hover span{
+.trash:hover span{
 	visibility: visible;
+}
+textarea {
+	opacity: 50%;
+	background-color: yellow;
+	height:70%;
+	resize: none;
+	border: none;
+}
+.tick {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	bottom: 0px;
+	right: 0px;
 }
