@@ -1,8 +1,25 @@
 body {
-	background-color: silver;
+	background-color: brown;
 }
-.note {
-	color: red;
-	background-color: navy;
-	display: block;
+div.note {
+	display: auto;
+	overflow: hidden;
+	position: relative;
+	#color: navy;
+	background-color: yellow;
+	box-shadow: 10px 10px 20px -5px black;
+	width: 150px;
+	height: 150px;
+}
+.btns {
+	display: inline-block;
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+}
+.btns span {
+	visibility: hidden;
+}
+.btns:hover span{
+	visibility: visible;
 }

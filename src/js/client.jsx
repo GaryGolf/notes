@@ -7,8 +7,8 @@ class App extends React.Component  {
 		//if(NODE_ENV != "production") console.log('development mode');
 		return (
 			<div>
-				<h1> Hello World!!!</h1>
-				<Note>I've got this</Note>
+				<h1> Notes</h1>
+				<Note> lorem ipsum </Note>
 
 			</div>
 		);
