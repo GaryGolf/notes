@@ -6,7 +6,7 @@ var webpack = require('webpack');
 module.exports={
 	//context: path.resolve(__dirname, "src"),
 	entry: [
-			"webpack-dev-server/client",
+			//"webpack-dev-server/client",
 			"./src/js/client.jsx"
 	],
 	devtool: debug ? "sourcemap" : null,
@@ -38,7 +38,7 @@ module.exports={
 			},
 			{
 				test: /\.css$/,
-				loader : 'style!css'//!autoprefixer?browser=last 2 versions'
+				loader : 'style!css!autoprefixer?browsers=last 2 versions'
 			},
 			{
 				test: /\.(svg|png|jpg)$/,

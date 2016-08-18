@@ -1,18 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Note from "./components/Note";
+import {Router, Route, inndexRoute, hashHistory } from "react-router";
+import Board from './components/Board';
+import Note from './components/Note';
 
-class App extends React.Component  {
-	render(){
-		//if(NODE_ENV != "production") console.log('development mode');
-		return (
-			<div>
-				<h1> Notes</h1>
-				<Note> lorem ipsum </Note>
+if(NODE_ENV != "production") console.log('development mode');
 
-			</div>
-		);
-	}
-}
-const app = document.body;//.getElementById('app');
-ReactDOM.render(<App/>,app);
+const app = document.getElementById('app');
+ReactDOM.render(
+	<Router history={hashHistory}>
+		<Route path="/" component={Board} />
+	</Router>,
+	app);
