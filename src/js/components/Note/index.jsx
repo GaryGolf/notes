@@ -15,6 +15,9 @@ export default class  Note extends React.Component {
     }
     clickHandler(e){
         this.setState({editMode:false});
+        const id = this.props.idx;
+        const text = this.state.value;
+        this.props.save(id, text);
     }
     dblClickHandler(e){
         this.setState({editMode:true});
